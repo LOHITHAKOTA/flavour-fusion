@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desserts Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./Scriptfile.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles1.css">
+</head>
+<body style="background-color: rgb(18, 42, 18);">
+    <div style=" background-position: center;
+    background-size:cover;
+    background:linear-gradient(rgba(58, 54, 54, 0.75),rgba(37, 35, 35, 0.75)),url(./images/Desserts/desserts.jpg) no-repeat top left /cover;
+    padding-bottom: 150px;" class="page">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <h3 style="color:antiquewhite" class="logo">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/index.html">Home<i></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                            <a class="dropdown-item" href="./BreakFast.html">Breakfast</a>
+                            <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                            <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                            <a class="dropdown-item" href="./Salads.html">Salads</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/Recipes.html">Fusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/SignIn.html">Sign In</a>
+                    </li>
+                    <li id="logoutLink" style="display: none;">
+                        <a class="nav-link" href="http://localhost:3002/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="user-name" id="userName">Welcome Guest!
+    </div>
+    <div class="a">
+        <h1>A Great way to express your love for all things sweet and decadent.</h1>
+        <p>Cooking is like love. It should be entered into with abandon or not at all.</p><br/><br>
+    </div>
+    </div>
+    <div class="b">
+            <center>
+                <table class="t">
+                    <tr>
+                        <td><a href="#"><img src="images/Desserts/v1.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                        <td><a href="#"><img src="images/Desserts/v2.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                        <td><a href="#"><img src="images/Desserts/v3.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                        <td><a href="#"><img src="images/Desserts/v4.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox25')">
+                        <img src="images/Desserts/d1.jpg" alt="Polaroid 25">
+                        <div id="infoBox25" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox25')">&times;</span>
+                            <h2>Gulab Jamun</h2><p>To prepare Gulab Jamun, start by combining 1 cup of milk powder, 1/4 cup of all-purpose flour, 1/4 teaspoon of baking soda, and 2 tablespoons of ghee in a bowl. Mix well and gradually add milk to form a soft dough. Let the dough rest for 10 minutes. Meanwhile, prepare the sugar syrup by boiling 2 cups of sugar with 1.5 cups of water until the sugar dissolves. Add a few cardamom pods and a splash of rose water, then simmer for a few minutes. Shape the dough into small balls and fry them in medium-hot oil until golden brown. Transfer the fried balls to the warm sugar syrup and let them soak for at least 2 hours before serving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox26')">
+                        <img src="images/Desserts/d2.jpg" alt="Polaroid 26">
+                        <div id="infoBox26" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox26')">&times;</span>
+                            <h2>Kaju Burfi</h2><p>For Kaju Burfi, grind 2 cups of cashews into a fine powder. In a pan, combine 1 cup of sugar and 1/2 cup of water and cook until the sugar dissolves and forms a syrup. Add the cashew powder and stir continuously over low heat until the mixture thickens and starts to leave the sides of the pan. Transfer the mixture to a greased tray and spread it evenly. Let it cool slightly before cutting into diamond-shaped pieces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox27')">
+                        <img src="images/Desserts/d3.jpg" alt="Polaroid 27">
+                        <div id="infoBox27" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox27')">&times;</span>
+                            <h2>Rasgulla</h2><p>To prepare Rasgulla, start by boiling 1 liter of milk and adding 2 tablespoons of lemon juice to curdle it. Strain the curdled milk through a muslin cloth and wash it under cold water to remove the lemon flavor. Hang the cloth for about 30 minutes to drain excess water. Knead the chenna (paneer) until smooth and form small balls. In a large pot, boil 1 cup of sugar with 4 cups of water to make a sugar syrup. Add the chenna balls to the boiling syrup and cook for 15-20 minutes until they double in size. Let the rasgullas cool in the syrup before serving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox28')">
+                        <img src="images/Desserts/d4.jpg" alt="Polaroid 28">
+                        <div id="infoBox28" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox28')">&times;</span>
+                            <h2>Shrikhand</h2><p>For Shrikhand, hang 2 cups of yogurt in a muslin cloth for 4-5 hours to drain the whey. Transfer the thickened yogurt to a bowl and whisk in 1/2 cup of powdered sugar, 1/4 teaspoon of cardamom powder, and a pinch of saffron soaked in 1 tablespoon of warm milk. Chill the shrikhand in the refrigerator for a few hours before serving, garnished with chopped nuts.</p>
+                            break;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox29')">
+                        <img src="images/Desserts/d5.jpg" alt="Polaroid 29">
+                        <div id="infoBox29" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox29')">&times;</span>
+                            <h2>Mango Halwa</h2><p>To prepare Mango Halwa, heat 2 tablespoons of ghee in a pan and add 1 cup of semolina (sooji). Roast the semolina on low heat until it turns golden brown. In a separate pan, heat 1 cup of mango puree, 1 cup of water, and 1/2 cup of sugar until the sugar dissolves. Gradually add the mango mixture to the roasted semolina, stirring continuously to avoid lumps. Cook until the halwa thickens and starts to leave the sides of the pan. Garnish with chopped nuts before serving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox30')">
+                        <img src="images/Desserts/d6.jpg" alt="Polaroid 30">
+                        <div id="infoBox30" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox30')">&times;</span>
+                            <h2>Toasted Coconut Ladoo</h2><p>For Toasted Coconut Ladoo, toast 2 cups of desiccated coconut in a dry pan until lightly golden. In a separate pan, heat 1/2 cup of condensed milk and 1/4 cup of sugar until the sugar dissolves. Add the toasted coconut and mix well. Cook for a few minutes until the mixture thickens. Let it cool slightly before shaping into small ladoos. Roll the ladoos in additional desiccated coconut before serving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox31')">
+                        <img src="images/Desserts/d7.jpg" alt="Polaroid 31">
+                        <div id="infoBox31" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox31')">&times;</span>
+                            <h2>Rasmalai</h2><p>To prepare Rasmalai, start by making rasgullas (as described above). For the rasmalai milk, boil 1 liter of milk until it reduces to half. Add 1/2 cup of sugar, a few saffron strands, and 1/4 teaspoon of cardamom powder. Add the prepared rasgullas to the thickened milk and let them soak for a few hours in the refrigerator. Garnish with chopped pistachios before serving.</p>
+                            break;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox32')">
+                        <img src="images/Desserts/d8.jpg" alt="Polaroid 32">
+                        <div id="infoBox32" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox32')">&times;</span>
+                            <h2>Mysore Pak</h2><p>For Mysore Pak, heat 1 cup of ghee in a pan until it melts. In another pan, combine 1 cup of sugar with 1/4 cup of water and cook until the sugar dissolves and forms a syrup. Add 1 cup of gram flour (besan) to the syrup, stirring continuously to avoid lumps. Gradually add the melted ghee while stirring continuously until the mixture thickens and starts to leave the sides of the pan. Pour the mixture into a greased tray and let it cool slightly before cutting into pieces.</p>
+                            break;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox33')">
+                        <img src="images/Desserts/d9.jpg" alt="Polaroid 33">
+                        <div id="infoBox33" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox33')">&times;</span>
+                            <h2>Fruit Custard</h2><p>To prepare Fruit Custard, mix 2 tablespoons of custard powder with 1/4 cup of cold milk to form a smooth paste. Boil 2 cups of milk and add 1/4 cup of sugar. Gradually add the custard paste to the boiling milk, stirring continuously to avoid lumps. Cook until the custard thickens, then remove from heat and let it cool. Add a variety of chopped fruits (such as apples, bananas, grapes, and mangoes) to the cooled custard and refrigerate for a few hours before serving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox34')">
+                        <img src="images/Desserts/d10.jpg" alt="Polaroid 34">
+                        <div id="infoBox34" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox34')">&times;</span>
+                            <h2>Peanut Chikki</h2><p>For Peanut Chikki, roast 1 cup of peanuts in a dry pan until lightly golden. Remove the skins and coarsely crush the peanuts. In a separate pan, melt 1 cup of jaggery with 2 tablespoons of water and cook until it forms a hard ball stage (drop a small amount into cold water; it should harden immediately). Add the crushed peanuts and mix well. Pour the mixture onto a greased tray and spread it evenly. Let it cool slightly before cutting into pieces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox35')">
+                        <img src="images/Desserts/d11.jpg" alt="Polaroid 35">
+                        <div id="infoBox35" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox35')">&times;</span>
+                            <h2>Date Balls</h2><p>To prepare Date Balls, remove the pits from 1 cup of dates and chop them finely. In a pan, melt 2 tablespoons of ghee and add the chopped dates. Cook until the dates soften and form a sticky mixture. Add 1/2 cup of chopped nuts (such as almonds, walnuts, and cashews) and mix well. Let the mixture cool slightly before shaping into small balls. Roll the date balls in desiccated coconut before serving.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox36')">
+                        <img src="images/Desserts/d12.jpg" alt="Polaroid 36">
+                        <div id="infoBox36" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox36')">&times;</span>
+                            <h2>Karanji</h2><p>For Karanji, make the dough by combining 2 cups of all-purpose flour with 1/4 cup of melted ghee and enough water to form a soft dough. Let the dough rest for 30 minutes. For the filling, mix 1 cup of grated coconut, 1/2 cup of powdered sugar, 1/4 cup of chopped nuts, and 1/4 teaspoon of cardamom powder. Roll out small portions of the dough into circles and place a spoonful of the filling in the center. Fold the dough over to form a half-moon shape and seal the edges. Fry the karanji in medium-hot oil until golden brown. Let them cool before serving.</p>
+                            break;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay" onclick="closeAllInfoBoxes()"></div>
+    <script>
+        function showInfoBox(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hideInfoBox(event, id) {
+            event.stopPropagation(); // Prevent click from propagating to parent
+            document.getElementById(id).style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function closeAllInfoBoxes() {
+            var modals = document.querySelectorAll('.info-modal');
+            modals.forEach(function (modal) {
+                modal.style.display = 'none';
+            });
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer class="footer p-1">
+        <div>
+            <p>&copy; Developed By Lohitha Kota</p>
+            <p>All rights reserved.</p>
+            <h4 style="font-weight: bold;">Social Media</h4>
+            <p>
+                <i class="fab fa-github display-6"></i> &nbsp;&nbsp;<i class="fab fa-instagram display-6"></i>
+                &nbsp;&nbsp;<i class="fab fa-linkedin display-6"></i>
+            </p>
+        </div>
+</footer>         
+</body>
+</html>

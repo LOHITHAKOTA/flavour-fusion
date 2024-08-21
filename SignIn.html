@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./Scriptfile.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles1.css">
+    <style>
+        section{
+            background:linear-gradient(rgba(58, 54, 54, 0.75),rgba(37, 35, 35, 0.75)),url(./images/sign.jpg) no-repeat top left /cover;
+        }
+    </style>
+</head>
+<body>
+    <div style=" background-position: center;
+    background-size:cover;
+    background:linear-gradient(rgba(58, 54, 54, 0.75),rgba(37, 35, 35, 0.75)),url(./images/chickenb.jpg) no-repeat top left /cover;
+    padding-bottom: 150px;" class="page">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <h3 style="color:antiquewhite" class="logo">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</h3>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://localhost:3002/index.html">Home<i></i></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Recipes
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                          <a class="dropdown-item" href="./BreakFast.html">Breakfast</a>
+                          <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                          <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                          <a class="dropdown-item" href="./Salads.html">Salads</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://localhost:3002/Recipes.html">Fusion</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://localhost:3002/AboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://localhost:3002/ContactUs.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://localhost:3002/SignIn.html">Sign In</a>
+                  </li>
+                  <li id="logoutLink" style="display: none;">
+                      <a class="nav-link" href="http://localhost:3002/logout">Logout</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <div class="user-name" id="userName">Welcome Guest!
+    </div>
+<section>
+    <style>
+        .form-label{
+            color:black;
+        }
+        .text-center i {
+            color: rgb(201, 47, 47);
+            font-size: xx-large;
+        }
+        p{
+            color: rgb(176, 155, 155);
+        }
+    </style>
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(220, 100%, 62%)">
+            The best offer <br />
+            <span style="color: hsl(218, 61%, 49%)">for your business</span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(220, 15%, 68%)">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus, expedita iusto veniam atque, magni tempora mollitia
+            dolorum consequatur nulla, neque debitis eos reprehenderit quasi
+            ab ipsum nisi dolorem modi. Quos?
+          </p>
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form action="/register" method="POST" id="loginForm">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" name="firstName" required>
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" name="lastName" required>
+                      <label class="form-label" for="form3Example2">Last name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" name="email" required>
+                  <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control"  name="password" required>
+                  <label class="form-label" for="form3Example4">Password</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input list="dishes" id="form3Example5" class="form-control" name="favouriteDish" required>
+                  <label class="form-label" for="form3Example5">Favourite Dish</label>
+                  <datalist id="dishes">
+                      <option value="BreakFast">
+                      <option value="Lunch">
+                      <option value="Desserts">
+                      <option value="Salads">
+                  </datalist>
+              </div>
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Sign up
+                </button>
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button  type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button  type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+                  <button  type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                  <button  type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </section>
+  <footer class="footer p-1">
+    <div>
+        <p>&copy; Developed By Lohitha Kota</p>
+        <p>All rights reserved.</p>
+        <h4 style="font-weight: bold;">Social Media</h4>
+        <p>
+            <i class="fab fa-github display-6"></i> &nbsp;&nbsp;<i class="fab fa-instagram display-6"></i>
+            &nbsp;&nbsp;<i class="fab fa-linkedin display-6"></i>
+        </p>
+    </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

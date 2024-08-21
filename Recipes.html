@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipes Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./Scriptfile.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles1.css">
+</head>
+<body style="background-color: rgb(18, 42, 18);">
+    <div style=" background-position: center;
+    background-size:cover;
+    background:linear-gradient(rgba(58, 54, 54, 0.75),rgba(37, 35, 35, 0.75)),url(./images/thalli.jpg) no-repeat top left /cover;
+    padding-bottom: 150px;" class="page">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <h3 style="color:antiquewhite" class="logo">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/index.html">Home<i></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                            <a class="dropdown-item" href="./BreakFast.html">Breakfast</a>
+                            <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                            <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                            <a class="dropdown-item" href="./Salads.html">Salads</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/Recipes.html">Fusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/SignIn.html">Sign In</a>
+                    </li>
+                    <li id="logoutLink" style="display: none;">
+                        <a class="nav-link" href="http://localhost:3002/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="user-name" id="userName">Welcome Guest!</div>
+    <div class="a">
+        <h1>Simple and easy food recipes</h1>
+        <p>Cooking is like love. It should be entered into with abandon or not at all.</p><br/><br>
+    </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox1')">
+                    <img src="images/breakfast/b1.jpg" alt="Polaroid 1">
+                    <div id="infoBox1" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox1')">&times;</span>
+                        <h5>Pan Cake</h5>
+                        <p>1.Mix 1 cup of flour, 2 tablespoons of sugar, 1 tablespoon of baking powder, and a pinch of salt.
+                            <br>2. In another bowl, whisk together 1 cup of milk, 1 egg, and 2 tablespoons of melted butter.<br>
+                            3. Combine the wet and dry ingredients and mix until smooth.
+                            <br>4. Heat a lightly oiled griddle over medium heat.
+                            <br>5. Pour batter onto the griddle, cook until bubbles form, then flip and cook until golden brown.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox2')">
+                    <img src="images/breakfast/b2.jpg" alt="Polaroid 2">
+                    <div id="infoBox2" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox2')">&times;</span>
+                        <h5>Dosa</h5>
+                        <p>1.Soak 2 cups of rice and 1 cup of urad dal separately for 6 hours.
+                            <br>2. Grind them into a smooth batter, mix well, and ferment overnight.
+                            <br>Add salt and water to achieve a pouring consistency.
+                            <br>3. Heat a non-stick pan, pour a ladleful of batter, and spread it thin.<br>4. Cook until golden brown, then flip and cook the other side briefly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox3')">
+                    <img src="images/breakfast/b3.jpg" alt="Polaroid 3">
+                    <div id="infoBox3" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox3')">&times;</span>
+                            <h2>Chapathi</h2><p>1. Mix 2 cups of whole wheat flour with a pinch of salt and water to form a soft dough.
+                                <br>2. Knead well and let it rest for 20 minutes.<br>
+                                3. Divide the dough into small balls, roll them out into thin circles.
+                                <br>4. Cook on a hot griddle until brown spots appear on both sides.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox4')">
+                    <img src="images/breakfast/b4.jpg" alt="Polaroid 4">
+                    <div id="infoBox4" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox4')">&times;</span>
+                        <h2>Vaada</h2><p>1. Soak 1 cup of urad dal for 4 hours, then grind into a thick batter.<br>2. Add chopped onions, green chilies, curry leaves, salt, and asafoetida to the batter.<br>3. Shape the batter into small balls or donuts.<br>4. Deep fry in hot oil until golden brown and crispy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox5')">
+                    <img src="images/breakfast/b5.jpg" alt="Polaroid 5">
+                    <div id="infoBox5" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox5')">&times;</span>
+                        <h2>Puri</h2><p>1. Mix 2 cups of whole wheat flour with a pinch of salt and water to form a stiff dough.<br>2. Divide the dough into small balls and roll them out into small circles.<br>3. Deep fry in hot oil until they puff up and turn golden brown.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox6')">
+                    <img src="images/breakfast/b6.jpg" alt="Polaroid 6">
+                    <div id="infoBox6" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox6')">&times;</span>
+                        <h2>Idli</h2><p>1. Soak 2 cups of rice and 1 cup of urad dal separately for 6 hours.<br>2. Grind them into a smooth batter, mix well, and ferment overnight.<br>3. Add salt to the batter and pour it into greased idli molds.<br>4. Steam for 10-12 minutes until cooked through.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox7')">
+                    <img src="images/breakfast/b7.jpg" alt="Polaroid 7">
+                    <div id="infoBox7" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox7')">&times;</span>
+                        <h2>Vegetable Rava Upma</h2><p>1. To begin making the Vegetable Rava Upma Recipe/ Sooji Upma, prep all the ingredients and keep aside.<br>2. In a saucepan; boil 3-1/4 cups of water along with salt and sugar and set aside. Add the vegetables to this water and cook for a few minutes until cooked. Turn the heat to low and allow the water to remain warm.<br>3. Heat oil in heavy bottomed pan on medium heat; add mustard seeds, half urad dal seeds and allow it to crackle and the dal to turn golden brown and crisp.<br>4. Stir in the onions, ginger, asafoetida, curry leaves and green chilies and sauté until onions are tender.<br>5. Stir in the semolina/sooji/rava and roast along with the onion mixture until you get the light roasted aroma.<br>6. Gradually pour the hot water along with the vegetables into the above mixture and continue to stir in the process to prevent lump formation. Once the Rava Upma comes to a porridge like consistency, turn the heat to low, cover the pan and allow the Rava Upma to cook and steam in the heat.<br>7. Keep stirring occasionally to avoid lumps. This will take about 10 minutes.<br>8. Finally stir in the ghee and lemon juice and sauté for a couple of minutes on low heat until all the ingredients are well combined. The ghee enhances the flavour of the Rava Upma/ Sooji Upma.<br>9. Serve Vegetable Rava Upma Recipe along with Coconut Chutney and South Indian Filter Coffee Recipe With Filter Coffee Powder for a complete south Indian Breakfast.<br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox8')">
+                    <img src="images/breakfast/b8.jpg" alt="Polaroid 8">
+                    <div id="infoBox8" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox8')">&times;</span>
+                        <h2>Foxtail Millet Rava Idli</h2><p>1.Dry roast 1 cup of foxtail millet rava on medium heat until it turns slightly golden. Set aside.Dry roast 1 cup of semolina until it turns slightly golden. Set aside.<br>2.Heat 2 tablespoons of oil in a pan. Add mustard seeds and let them splutter.Add urad dal and chana dal, and fry until golden brown.Add cumin seeds, asafoetida, curry leaves, grated ginger, and chopped green chilies. Sauté for a minute.<br>3.In a large mixing bowl, combine the roasted foxtail millet rava and roasted semolina.Add the tempered spices to the bowl.Add 1 cup of yogurt and 1 cup of water to the mixture. Mix well to form a thick batter.Add salt to taste and mix well.Just before steaming, add 1 teaspoon of Eno fruit salt or baking soda and mix gently.4.Grease the idli molds with oil.Pour the batter into the idli molds.Steam in an idli steamer or a pressure cooker (without the whistle) for 10-12 minutes or until a toothpick inserted comes out clean.<br>5. Once done, remove the idlis from the molds.Garnish with finely chopped coriander leaves.Serve hot with coconut chutney and sambar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox9')">
+                    <img src="images/breakfast/b9.jpg" alt="Polaroid 9">
+                    <div id="infoBox9" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox9')">&times;</span>
+                        <h2>Sooji Upma With Coconut</h2><p>1. Dry roast 1 cup of semolina until it turns light golden.<br>Heat oil, add mustard seeds, urad dal, chana dal, curry leaves, and chopped green chilies.<br>2. Add 2 cups of water, salt, and bring to a boil.<br>3. Gradually add the roasted semolina, stirring continuously to avoid lumps.<br>4. Cook until the semolina absorbs the water, then mix in grated coconut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox10')">
+                    <img src="images/breakfast/b10.jpg" alt="Polaroid 10">
+                    <div id="infoBox10" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox10')">&times;</span>
+                        <h2>Palak Ragi & Oats Wheat Thepla</h2><p>1. Mix 1 cup of whole wheat flour, 1/2 cup of ragi flour, 1/4 cup of oats flour, and salt.<br>2. Add finely chopped spinach, ginger, green chilies, and yogurt to form a dough.<br>3. Roll out small portions of the dough into thin circles.<br>4. Cook on a hot griddle until brown spots appear on both sides.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox11')">
+                    <img src="images/breakfast/b11.jpg" alt="Polaroid 11">
+                    <div id="infoBox11" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox11')">&times;</span>
+                        <h2>Poha</h2><p>1. Rinse 2 cups of flattened rice (poha) and let it drain.<br>2. Heat oil, add mustard seeds, cumin seeds, curry leaves, chopped onions, and green chilies.<br>Add turmeric powder, salt, and the rinsed poha.<br>3. Mix well and cook for a few minutes until heated through.<br>4. Garnish with chopped coriander and lemon juice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox12')">
+                    <img src="images/breakfast/b12.jpg" alt="Polaroid 12">
+                    <div id="infoBox12" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox12')">&times;</span>
+                        <h2>Corn Stuffed Paratha</h2><p>1. To begin making the Corn Stuffed Paratha, we have to first wash the corn and keep the potatoes cooked. <br>You can either pressure cook the potatoes for 2 whistles or add them to saucepan with water and boil them for 15 mins/until it is cooked.<br>2. Once the potatoes are cooked, peel the skin and add them to a bowl and mash them. Once mashed, add chopped coriander leaves, sweet corn and homemade tomato pickle. Mix well. Add required amount of salt and mix the mixture well. Keep aside. The corn stuffing is ready. <br> 3. Now we have to make the dough for the paratha. In a flat bowl add wheat flour, salt and mix. Add water little by little and knead the dough until it is smooth and homogeneously mixed. Apply a coating of oil on top of the ball of dough and leave it to rest for 10 minutes.<br>4. Next, divide the dough into medium sized balls. Take one ball of dough and roll it out until its about 4-5 inches diameter.  Place one tablespoon of stuffing in the center and join the ends of the paratha dough so that the stuffing in encased in the dough. Do the same with the rest of the dough and corn mixture.<br>5. Place a tawa on medium heat and add some oil. Place the stuffed paratha on the tawa and cook on both sides until done. Drizzle some oil on top of the paratha when cooking on both sides. Take off the pan and finish the rest of the rolled out parathas. <br>6. Serve Corn Stuffed Paratha Recipe with Pisarna Manga Recipe and Homemade Curd.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox13')">
+                    <img src="images/lunch/l1.jpg" alt="Polaroid 13">
+                    <div id="infoBox13" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox13')">&times;</span>
+                        <h2>Vegetable Biryani</h2><p>To prepare veg biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. In a large pan, heat 3 tablespoons of ghee or oil and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms. Sauté for a minute before adding a large, thinly sliced onion and 2 slit green chilies. Cook until the onions turn golden brown, then add 1 tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Next, add a chopped tomato and cook until it softens. Incorporate 2 cups of mixed vegetables (such as carrot, peas, beans, and potato) and cook for a few minutes. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, 1 teaspoon of red chili powder, 1/2 teaspoon of turmeric powder, and salt to taste, mixing well. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water, then add a handful of chopped coriander and mint leaves, mixing well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, which should take about 15-20 minutes. Once done, drizzle a pinch of saffron soaked in 2 tablespoons of warm milk over the biryani, cover, and let it rest for 5 minutes. Finally, fluff the biryani gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox14')">
+                    <img src="images/lunch/l2.jpg" alt="Polaroid 14">
+                    <div id="infoBox14" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox14')">&times;</span>
+                        <h2>Tomato Rice</h2><p>To prepare tomato rice, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of oil in a pan and add a teaspoon of mustard seeds and a teaspoon of cumin seeds. Once they splutter, add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 3 chopped tomatoes and cook until they become soft and mushy. Stir in a teaspoon of turmeric powder, a teaspoon of red chili powder, and salt to taste. Add the drained rice and mix gently to coat the rice with the tomato mixture. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the tomato rice gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox15')">
+                    <img src="images/lunch/l3.jpg" alt="Polaroid 15">
+                    <div id="infoBox15" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox15')">&times;</span>
+                        <h2>Paneer Biryani</h2><p>For paneer biryani, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 1.5 cups of cubed paneer and cook until lightly browned. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste, mixing well. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the paneer biryani gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox16')">
+                    <img src="images/lunch/l4.jpg" alt="Polaroid 16">
+                    <div id="infoBox16" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox16')">&times;</span>
+                        <h2>Coconut Rice</h2><p>To prepare coconut rice, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of oil in a pan and add a teaspoon of mustard seeds, a teaspoon of cumin seeds, a tablespoon of chana dal, and a tablespoon of urad dal. Once they splutter, add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Stir in 1.5 cups of grated coconut and sauté for a few minutes. Add the drained rice and mix gently to coat the rice with the coconut mixture. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the coconut rice gently with a fork before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox17')">
+                    <img src="images/lunch/l5.jpg" alt="Polaroid 17">
+                    <div id="infoBox17" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox17')">&times;</span>
+                        <h2>Vegetable Fried Rice</h2><p>For veg fried rice, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Cook the rice in 3 cups of water until fully cooked, then spread it on a plate to cool. Heat 3 tablespoons of oil in a large pan and add a teaspoon of finely chopped garlic and a teaspoon of finely chopped ginger, sautéing until fragrant. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn translucent. Add 2 cups of mixed vegetables (such as carrot, peas, beans, and bell pepper) and cook until tender. Stir in 2 tablespoons of soy sauce, a tablespoon of vinegar, a teaspoon of black pepper, and salt to taste. Add the cooled rice and mix gently to combine with the vegetables and sauce. Cook for a few minutes until everything is heated through. Fluff the veg fried rice gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox18')">
+                    <img src="images/lunch/l6.jpg" alt="Polaroid 18">
+                    <div id="infoBox18" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox18')">&times;</span>
+                        <h2>Methi Pulav</h2><p>To prepare methi pulav, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Stir in 2 cups of fresh methi (fenugreek) leaves, washed and chopped, and cook until the leaves wilt and the raw smell is gone. Add a chopped tomato and cook until it softens. Stir in a teaspoon of turmeric powder, a teaspoon of red chili powder, and salt to taste. Add the drained rice and mix gently to coat the rice with the methi mixture. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the methi pulav gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox19')">
+                    <img src="images/lunch/l7.jpg" alt="Polaroid 19">
+                    <div id="infoBox19" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox19')">&times;</span>
+                        <h2>Chicken Biryani</h2><p>To prepare chicken biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. In a large pan, heat 3 tablespoons of ghee or oil and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 500 grams of chicken pieces and cook until they are no longer pink. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Mix well, then add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the chicken biryani gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox20')">
+                    <img src="images/lunch/l8.jpg" alt="Polaroid 20">
+                    <div id="infoBox20" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox20')">&times;</span>
+                        <h2>Mutton Biryani</h2><p>To prepare mutton biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. In a large pan, heat 3 tablespoons of ghee or oil and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add 500 grams of mutton pieces and cook until they are browned on all sides. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Mix well, then add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 20-30 minutes. Ensure the mutton is tender; if needed, cook it longer or use a pressure cooker. Fluff the mutton biryani gently with a fork before serving..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox21')">
+                    <img src="images/lunch/l9.jpg" alt="Polaroid 21">
+                    <div id="infoBox21" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox21')">&times;</span>
+                        <h2>Fish Biryani</h2><p>To prepare fish biryani, use 500 grams of firm white fish fillets cut into chunks. Wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Add the fish pieces and cook gently until they are opaque. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the fish biryani gently with a fork before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox22')">
+                    <img src="images/lunch/l10.jpg" alt="Polaroid 22">
+                    <div id="infoBox22" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox22')">&times;</span>
+                        <h2>Chicken Fried Rice</h2><p>For chicken fried rice, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Cook the rice in 3 cups of water until fully cooked, then spread it on a plate to cool. Heat 3 tablespoons of oil in a large pan and add a teaspoon of finely chopped garlic and a teaspoon of finely chopped ginger, sautéing until fragrant. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn translucent. Add 250 grams of boneless chicken, cut into small pieces, and cook until the chicken is no longer pink. Add 2 cups of mixed vegetables (such as carrot, peas, beans, and bell pepper) and cook until tender. Stir in 2 tablespoons of soy sauce, a tablespoon of vinegar, a teaspoon of black pepper, and salt to taste. Add the cooled rice and mix gently to combine with the vegetables, chicken, and sauce. Cook for a few minutes until everything is heated through. Fluff the chicken fried rice gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox23')">
+                    <img src="images/lunch/l11.jpg" alt="Polaroid 23">
+                    <div id="infoBox23" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox23')">&times;</span>
+                        <h2>Egg Biryani</h2><p>For egg biryani, wash and soak 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Hard boil 6 eggs, peel, and set aside. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add a tablespoon of ginger-garlic paste and sauté until the raw smell disappears. Add a chopped tomato and cook until it softens. Stir in 1/2 cup of yogurt, 2 tablespoons of biryani masala, a teaspoon of red chili powder, a teaspoon of turmeric powder, and salt to taste. Add the boiled eggs, making small slits in them to allow the spices to penetrate. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the egg biryani gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox24')">
+                    <img src="images/lunch/l12.jpg" alt="Polaroid 24">
+                    <div id="infoBox24" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox24')">&times;</span>
+                        <h2>Chiken Lollipop Biryani</h2><p>To prepare chicken lollipop biryani, start by washing and soaking 1.5 cups of basmati rice for 30 minutes, then drain and set it aside. Marinate 500 grams of chicken lollipop in 1/2 cup of yogurt, a tablespoon of ginger-garlic paste, a teaspoon of red chili powder, a teaspoon of turmeric powder, 2 tablespoons of biryani masala, and salt to taste. Heat 3 tablespoons of ghee or oil in a large pan and add a bay leaf, 3 cloves, a 1-inch cinnamon stick, and 2 cardamoms, sautéing for a minute. Add a large, thinly sliced onion and 2 slit green chilies, cooking until the onions turn golden brown. Add the marinated chicken lollipop and cook until the chicken is no longer pink. Add a chopped tomato and cook until it softens. Add the drained rice and mix gently to coat the rice with the spices. Pour in 3 cups of water and mix well. Cover the pan and cook on low heat until the rice is fully cooked and the water is absorbed, about 15-20 minutes. Fluff the chicken lollipop biryani gently with a fork before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox25')">
+                    <img src="images/Desserts/d1.jpg" alt="Polaroid 25">
+                    <div id="infoBox25" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox25')">&times;</span>
+                        <h2>Gulab Jamun</h2><p>To prepare Gulab Jamun, start by combining 1 cup of milk powder, 1/4 cup of all-purpose flour, 1/4 teaspoon of baking soda, and 2 tablespoons of ghee in a bowl. Mix well and gradually add milk to form a soft dough. Let the dough rest for 10 minutes. Meanwhile, prepare the sugar syrup by boiling 2 cups of sugar with 1.5 cups of water until the sugar dissolves. Add a few cardamom pods and a splash of rose water, then simmer for a few minutes. Shape the dough into small balls and fry them in medium-hot oil until golden brown. Transfer the fried balls to the warm sugar syrup and let them soak for at least 2 hours before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox26')">
+                    <img src="images/Desserts/d2.jpg" alt="Polaroid 26">
+                    <div id="infoBox26" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox26')">&times;</span>
+                        <h2>Kaju Burfi</h2><p>For Kaju Burfi, grind 2 cups of cashews into a fine powder. In a pan, combine 1 cup of sugar and 1/2 cup of water and cook until the sugar dissolves and forms a syrup. Add the cashew powder and stir continuously over low heat until the mixture thickens and starts to leave the sides of the pan. Transfer the mixture to a greased tray and spread it evenly. Let it cool slightly before cutting into diamond-shaped pieces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox27')">
+                    <img src="images/Desserts/d3.jpg" alt="Polaroid 27">
+                    <div id="infoBox27" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox27')">&times;</span>
+                        <h2>Rasgulla</h2><p>To prepare Rasgulla, start by boiling 1 liter of milk and adding 2 tablespoons of lemon juice to curdle it. Strain the curdled milk through a muslin cloth and wash it under cold water to remove the lemon flavor. Hang the cloth for about 30 minutes to drain excess water. Knead the chenna (paneer) until smooth and form small balls. In a large pot, boil 1 cup of sugar with 4 cups of water to make a sugar syrup. Add the chenna balls to the boiling syrup and cook for 15-20 minutes until they double in size. Let the rasgullas cool in the syrup before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox28')">
+                    <img src="images/Desserts/d4.jpg" alt="Polaroid 28">
+                    <div id="infoBox28" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox28')">&times;</span>
+                        <h2>Shrikhand</h2><p>For Shrikhand, hang 2 cups of yogurt in a muslin cloth for 4-5 hours to drain the whey. Transfer the thickened yogurt to a bowl and whisk in 1/2 cup of powdered sugar, 1/4 teaspoon of cardamom powder, and a pinch of saffron soaked in 1 tablespoon of warm milk. Chill the shrikhand in the refrigerator for a few hours before serving, garnished with chopped nuts.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox29')">
+                    <img src="images/Desserts/d5.jpg" alt="Polaroid 29">
+                    <div id="infoBox29" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox29')">&times;</span>
+                        <h2>Mango Halwa</h2><p>To prepare Mango Halwa, heat 2 tablespoons of ghee in a pan and add 1 cup of semolina (sooji). Roast the semolina on low heat until it turns golden brown. In a separate pan, heat 1 cup of mango puree, 1 cup of water, and 1/2 cup of sugar until the sugar dissolves. Gradually add the mango mixture to the roasted semolina, stirring continuously to avoid lumps. Cook until the halwa thickens and starts to leave the sides of the pan. Garnish with chopped nuts before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox30')">
+                    <img src="images/Desserts/d6.jpg" alt="Polaroid 30">
+                    <div id="infoBox30" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox30')">&times;</span>
+                        <h2>Toasted Coconut Ladoo</h2><p>For Toasted Coconut Ladoo, toast 2 cups of desiccated coconut in a dry pan until lightly golden. In a separate pan, heat 1/2 cup of condensed milk and 1/4 cup of sugar until the sugar dissolves. Add the toasted coconut and mix well. Cook for a few minutes until the mixture thickens. Let it cool slightly before shaping into small ladoos. Roll the ladoos in additional desiccated coconut before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox31')">
+                    <img src="images/Desserts/d7.jpg" alt="Polaroid 31">
+                    <div id="infoBox31" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox31')">&times;</span>
+                        <h2>Rasmalai</h2><p>To prepare Rasmalai, start by making rasgullas (as described above). For the rasmalai milk, boil 1 liter of milk until it reduces to half. Add 1/2 cup of sugar, a few saffron strands, and 1/4 teaspoon of cardamom powder. Add the prepared rasgullas to the thickened milk and let them soak for a few hours in the refrigerator. Garnish with chopped pistachios before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox32')">
+                    <img src="images/Desserts/d8.jpg" alt="Polaroid 32">
+                    <div id="infoBox32" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox32')">&times;</span>
+                        <h2>Mysore Pak</h2><p>For Mysore Pak, heat 1 cup of ghee in a pan until it melts. In another pan, combine 1 cup of sugar with 1/4 cup of water and cook until the sugar dissolves and forms a syrup. Add 1 cup of gram flour (besan) to the syrup, stirring continuously to avoid lumps. Gradually add the melted ghee while stirring continuously until the mixture thickens and starts to leave the sides of the pan. Pour the mixture into a greased tray and let it cool slightly before cutting into pieces.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox33')">
+                    <img src="images/Desserts/d9.jpg" alt="Polaroid 33">
+                    <div id="infoBox33" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox33')">&times;</span>
+                        <h2>Fruit Custard</h2><p>To prepare Fruit Custard, mix 2 tablespoons of custard powder with 1/4 cup of cold milk to form a smooth paste. Boil 2 cups of milk and add 1/4 cup of sugar. Gradually add the custard paste to the boiling milk, stirring continuously to avoid lumps. Cook until the custard thickens, then remove from heat and let it cool. Add a variety of chopped fruits (such as apples, bananas, grapes, and mangoes) to the cooled custard and refrigerate for a few hours before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox34')">
+                    <img src="images/Desserts/d10.jpg" alt="Polaroid 34">
+                    <div id="infoBox34" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox34')">&times;</span>
+                        <h2>Peanut Chikki</h2><p>For Peanut Chikki, roast 1 cup of peanuts in a dry pan until lightly golden. Remove the skins and coarsely crush the peanuts. In a separate pan, melt 1 cup of jaggery with 2 tablespoons of water and cook until it forms a hard ball stage (drop a small amount into cold water; it should harden immediately). Add the crushed peanuts and mix well. Pour the mixture onto a greased tray and spread it evenly. Let it cool slightly before cutting into pieces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox35')">
+                    <img src="images/Desserts/d11.jpg" alt="Polaroid 35">
+                    <div id="infoBox35" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox35')">&times;</span>
+                        <h2>Date Balls</h2><p>To prepare Date Balls, remove the pits from 1 cup of dates and chop them finely. In a pan, melt 2 tablespoons of ghee and add the chopped dates. Cook until the dates soften and form a sticky mixture. Add 1/2 cup of chopped nuts (such as almonds, walnuts, and cashews) and mix well. Let the mixture cool slightly before shaping into small balls. Roll the date balls in desiccated coconut before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox36')">
+                    <img src="images/Desserts/d12.jpg" alt="Polaroid 36">
+                    <div id="infoBox36" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox36')">&times;</span>
+                        <h2>Karanji</h2><p>For Karanji, make the dough by combining 2 cups of all-purpose flour with 1/4 cup of melted ghee and enough water to form a soft dough. Let the dough rest for 30 minutes. For the filling, mix 1 cup of grated coconut, 1/2 cup of powdered sugar, 1/4 cup of chopped nuts, and 1/4 teaspoon of cardamom powder. Roll out small portions of the dough into circles and place a spoonful of the filling in the center. Fold the dough over to form a half-moon shape and seal the edges. Fry the karanji in medium-hot oil until golden brown. Let them cool before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox37')">
+                    <img src="images/salads/s1.jpg" alt="Polaroid 37">
+                    <div id="infoBox37" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox37')">&times;</span>
+                        <h2>Spinach Bacon Salad</h2><p>To prepare Spinach Bacon Salad, start by cooking 6 slices of bacon until crispy. Remove from the pan, let cool, and crumble. In a large bowl, combine 6 cups of fresh spinach leaves, 1/2 cup of thinly sliced red onion, and 1/2 cup of sliced mushrooms. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of red wine vinegar, a teaspoon of Dijon mustard, salt, and pepper to taste. Pour the dressing over the salad and toss to coat. Top with the crumbled bacon before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox38')">
+                    <img src="images/salads/s2.jpg" alt="Polaroid 38">
+                    <div id="infoBox38" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox38')">&times;</span>
+                        <h2>Summer Couscous Salad</h2><p>For Summer Couscous Salad, cook 1 cup of couscous according to package instructions, then fluff with a fork and let it cool. In a large bowl, combine the cooled couscous, 1 cup of cherry tomatoes halved, 1 cucumber diced, 1/2 red onion finely chopped, 1/4 cup of chopped fresh parsley, and 1/4 cup of crumbled feta cheese. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of lemon juice, a teaspoon of honey, salt, and pepper to taste. Pour the dressing over the salad and toss to coat before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox38')">
+                    <img src="images/salads/s3.jpg" alt="Polaroid 39">
+                    <div id="infoBox39" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox39')">&times;</span>
+                        <h2>Chickpea Salad</h2><p>To prepare Chickpea Salad, in a large bowl, combine 2 cans of chickpeas (drained and rinsed), 1 cup of cherry tomatoes halved, 1 cucumber diced, 1/2 red onion finely chopped, 1/4 cup of chopped fresh parsley, and 1/4 cup of crumbled feta cheese. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of lemon juice, a teaspoon of red wine vinegar, salt, and pepper to taste. Pour the dressing over the salad and toss to coat before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox40')">
+                    <img src="images/salads/s4.jpg" alt="Polaroid 40">
+                    <div id="infoBox40" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox40')">&times;</span>
+                        <h2>Black Bean and Corn Salad</h2><p>For Black Bean and Corn Salad, in a large bowl, combine 2 cans of black beans (drained and rinsed), 1 can of corn (drained), 1 red bell pepper diced, 1/2 red onion finely chopped, 1/4 cup of chopped fresh cilantro, and 1 avocado diced. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of lime juice, a teaspoon of cumin, salt, and pepper to taste. Pour the dressing over the salad and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox41')">
+                    <img src="images/salads/s5.jpg" alt="Polaroid 41">
+                    <div id="infoBox41" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox41')">&times;</span>
+                        <h2>Spinach Pear Salad with Gouda and Hazelnuts</h2><p>To prepare Spinach Pear Salad with Gouda and Hazelnuts, in a large bowl, combine 6 cups of fresh spinach leaves, 1 pear thinly sliced, 1/2 cup of shredded Gouda cheese, and 1/4 cup of chopped toasted hazelnuts. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of apple cider vinegar, a teaspoon of honey, salt, and pepper to taste. Pour the dressing over the salad and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox42')">
+                    <img src="images/salads/s6.jpg" alt="Polaroid 42">
+                    <div id="infoBox42" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox42')">&times;</span>
+                        <h2>Chicken Pasta Salad</h2><p>For Chicken Pasta Salad, cook 2 cups of pasta according to package instructions, then drain and let it cool. In a large bowl, combine the cooled pasta, 2 cups of cooked chicken diced, 1 cup of cherry tomatoes halved, 1/2 cup of sliced black olives, 1/2 cup of diced red bell pepper, 1/4 cup of chopped fresh basil, and 1/4 cup of crumbled feta cheese. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of red wine vinegar, a teaspoon of Dijon mustard, salt, and pepper to taste. Pour the dressing over the salad and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox43')">
+                    <img src="images/salads/s7.jpg" alt="Polaroid 43">
+                    <div id="infoBox43" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox43')">&times;</span>
+                        <h2>Broccoli Salad</h2><p>To prepare Broccoli Salad, in a large bowl, combine 4 cups of small broccoli florets, 1/2 cup of shredded carrots, 1/4 cup of thinly sliced red onion, 1/4 cup of dried cranberries, and 1/4 cup of sunflower seeds. In a small bowl, whisk together 1/2 cup of mayonnaise, 2 tablespoons of apple cider vinegar, a tablespoon of honey, salt, and pepper to taste. Pour the dressing over the salad and toss to coat before serving.</p>
+                        break;
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox44')">
+                    <img src="images/salads/s8.jpg" alt="Polaroid 44">
+                    <div id="infoBox44" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox44')">&times;</span>
+                        <h2>Crisp Apple Salad</h2><p>To prepare Crisp Apple Salad, start by washing and thinly slicing 2 large apples. In a large bowl, combine the apple slices, 6 cups of mixed salad greens, 1/2 cup of thinly sliced red onion, 1/2 cup of crumbled blue cheese, and 1/4 cup of chopped walnuts. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of apple cider vinegar, 1 tablespoon of honey, and a pinch of salt and pepper. Pour the dressing over the salad and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox45')">
+                    <img src="images/salads/s9.jpg" alt="Polaroid 45">
+                    <div id="infoBox45" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox45')">&times;</span>
+                        <h2>Mediterranean Salad</h2><p>For Mediterranean Salad, in a large bowl, combine 2 cups of cherry tomatoes halved, 1 cucumber diced, 1/2 red onion finely chopped, 1/2 cup of Kalamata olives halved, 1/4 cup of crumbled feta cheese, and 1/4 cup of chopped fresh parsley. In a small bowl, whisk together 3 tablespoons of olive oil, 2 tablespoons of red wine vinegar, 1 teaspoon of dried oregano, and a pinch of salt and pepper. Pour the dressing over the salad and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox46')">
+                    <img src="images/salads/s10.jpg" alt="Polaroid 46">
+                    <div id="infoBox46" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox46')">&times;</span>
+                        <h2>Warm Cucumber Lemon Salad</h2><p>To prepare Warm Cucumber Lemon Salad, start by slicing 2 large cucumbers. In a pan, heat 2 tablespoons of olive oil over medium heat. Add the cucumber slices and sauté for 3-4 minutes until they are slightly softened but still crisp. Remove from heat and transfer to a large bowl. In a small bowl, whisk together the juice of 1 lemon, 1 tablespoon of honey, 1 tablespoon of chopped fresh dill, salt, and pepper to taste. Pour the dressing over the warm cucumbers and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox47')">
+                    <img src="images/salads/s11.jpg" alt="Polaroid 47">
+                    <div id="infoBox47" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox47')">&times;</span>
+                        <h2>Indian Style Kachumber Salad</h2><p>For Indian Style Kachumber Salad, in a large bowl, combine 2 diced tomatoes, 1 diced cucumber, 1 diced red onion, and 1 finely chopped green chili. Add 1/4 cup of chopped fresh coriander leaves. In a small bowl, whisk together the juice of 1 lemon, 1/2 teaspoon of chaat masala, 1/2 teaspoon of roasted cumin powder, salt, and pepper to taste. Pour the dressing over the vegetables and toss to coat before serving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="polaroid" onclick="showInfoBox('infoBox48')">
+                    <img src="images/salads/s12.jpg" alt="Polaroid 48">
+                    <div id="infoBox48" class="info-modal">
+                        <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox48')">&times;</span>
+                        <h2>Crispy Noodle Salad</h2><p>To prepare Crispy Noodle Salad, cook 2 cups of thin egg noodles according to package instructions until just tender. Drain and rinse under cold water, then spread on a baking sheet to dry. Heat 1/4 cup of oil in a large pan over medium-high heat. Fry the noodles in batches until they are golden and crispy, then remove and drain on paper towels. In a large bowl, combine 2 cups of shredded cabbage, 1 cup of julienned carrots, 1 cup of julienned bell peppers, and 1/2 cup of chopped green onions. In a small bowl, whisk together 3 tablespoons of soy sauce, 2 tablespoons of rice vinegar, 1 tablespoon of sesame oil, 1 tablespoon of honey, and 1 teaspoon of grated ginger. Pour the dressing over the vegetables and toss to coat. Add the crispy noodles just before serving and toss gently to combine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="closeAllInfoBoxes()"></div>
+    <script>
+        function showInfoBox(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hideInfoBox(event, id) {
+            event.stopPropagation(); // Prevent click from propagating to parent
+            document.getElementById(id).style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function closeAllInfoBoxes() {
+            var modals = document.querySelectorAll('.info-modal');
+            modals.forEach(function (modal) {
+                modal.style.display = 'none';
+            });
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer class="footer p-1">
+        <div>
+            <p>&copy; Developed By Lohitha Kota</p>
+            <p>All rights reserved.</p>
+            <h4 style="font-weight: bold;">Social Media</h4>
+            <p>
+                <i class="fab fa-github display-6"></i> &nbsp;&nbsp;<i class="fab fa-instagram display-6"></i>
+                &nbsp;&nbsp;<i class="fab fa-linkedin display-6"></i>
+            </p>
+        </div>
+</footer>      
+</body>
+</html>

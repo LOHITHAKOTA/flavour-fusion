@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./Scriptfile.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles1.css">
+</head>
+<body>
+    <div style=" background-position: center;
+    background-size:cover;
+    background:linear-gradient(rgba(58, 54, 54, 0.75),rgba(37, 35, 35, 0.75)),url(./images/contact.jpg) no-repeat top left /cover;
+    padding-bottom: 150px;" class="page">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <h3 style="color:antiquewhite" class="logo">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/index.html">Home<i></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                            <a class="dropdown-item" href="./BreakFast.html">Breakfast</a>
+                            <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                            <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                            <a class="dropdown-item" href="./Salads.html">Salads</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/Recipes.html">Fusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/SignIn.html">Sign In</a>
+                    </li>
+                    <li id="logoutLink" style="display: none;">
+                        <a class="nav-link" href="http://localhost:3002/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="user-name" id="userName">Welcome Guest!
+    </div>
+    <div class="card1">
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below or email us at 
+                <a href="mailto:support@recipecollection.com">support@recipecollection.com</a>.
+            </p>
+            <form action="index.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                
+                <button type="submit">Send Message</button><br>
+            </form>
+        </div>
+    </div>
+      
+    </div>
+    <footer class="footer p-1">
+        <div>
+            <p>&copy; Developed By Lohitha Kota</p>
+            <p>All rights reserved.</p>
+            <h4 style="font-weight: bold;">Social Media</h4>
+            <p>
+                <i class="fab fa-github display-6"></i> &nbsp;&nbsp;<i class="fab fa-instagram display-6"></i>
+                &nbsp;&nbsp;<i class="fab fa-linkedin display-6"></i>
+            </p>
+        </div>
+</footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+</body>
+</html>

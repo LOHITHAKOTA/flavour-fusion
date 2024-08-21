@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breakfast Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./Scriptfile.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles1.css">
+</head>
+<body>
+    <div style=" background-position: center;
+    background-size:cover;
+    background:linear-gradient(rgba(58, 54, 54, 0.75),rgba(37, 35, 35, 0.75)),url(./images/breakfast/breakfast.jpg) no-repeat top left /cover;
+    padding-bottom: 150px;" class="page">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <h3 style="color:antiquewhite" class="logo">𝕱𝖑𝖆𝖛𝖔𝖚𝖗 𝕱𝖚𝖘𝖎𝖔𝖓</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/index.html">Home<i></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(104, 29, 104);">
+                            <a class="dropdown-item" href="./BreakFast.html">Breakfast</a>
+                            <a class="dropdown-item" href="./Lunch.html">Lunch</a>
+                            <a class="dropdown-item" href="./Desserts.html">Desserts</a>
+                            <a class="dropdown-item" href="./Salads.html">Salads</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/Recipes.html">Fusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3002/SignIn.html">Sign In</a>
+                    </li>
+                    <li id="logoutLink" style="display: none;">
+                        <a class="nav-link" href="http://localhost:3002/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="user-name" id="userName">Welcome Guest!
+    </div>
+    <div class="a">
+        <h1>Day with a spicy breakfast is like adding a spark to the morning fire.</h1>
+        <p>Cooking is like love. It should be entered into with abandon or not at all.</p><br/><br>
+    </div>
+    </div>
+    <div class="r">
+        <center>
+            <table class="t">
+                <tr>
+                    <td><a href="#"><img src="images/breakfast/v5.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                    <td><a href="#"><img src="images/breakfast/v6.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                    <td><a href="#"><img src="images/breakfast/v7.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                    <td><a href="#"><img src="images/breakfast/v8.jpg" style="background-size: cover;display: flex;width: 250px;height: 300px;"></a></td>
+                </tr>
+            </table>
+        </center>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox1')">
+                        <img src="images/breakfast/b1.jpg" alt="Polaroid 1">
+                        <div id="infoBox1" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox1')">&times;</span>
+                            <h5>Pan Cake</h5>
+                            <p>1.Mix 1 cup of flour, 2 tablespoons of sugar, 1 tablespoon of baking powder, and a pinch of salt.
+                                <br>2. In another bowl, whisk together 1 cup of milk, 1 egg, and 2 tablespoons of melted butter.<br>
+                                3. Combine the wet and dry ingredients and mix until smooth.
+                                <br>4. Heat a lightly oiled griddle over medium heat.
+                                <br>5. Pour batter onto the griddle, cook until bubbles form, then flip and cook until golden brown.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox2')">
+                        <img src="images/breakfast/b2.jpg" alt="Polaroid 2">
+                        <div id="infoBox2" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox2')">&times;</span>
+                            <h5>Dosa</h5>
+                            <p>1.Soak 2 cups of rice and 1 cup of urad dal separately for 6 hours.
+                                <br>2. Grind them into a smooth batter, mix well, and ferment overnight.
+                                <br>Add salt and water to achieve a pouring consistency.
+                                <br>3. Heat a non-stick pan, pour a ladleful of batter, and spread it thin.<br>4. Cook until golden brown, then flip and cook the other side briefly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox3')">
+                        <img src="images/breakfast/b3.jpg" alt="Polaroid 3">
+                        <div id="infoBox3" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox3')">&times;</span>
+                                <h2>Chapathi</h2><p>1. Mix 2 cups of whole wheat flour with a pinch of salt and water to form a soft dough.
+                                    <br>2. Knead well and let it rest for 20 minutes.<br>
+                                    3. Divide the dough into small balls, roll them out into thin circles.
+                                    <br>4. Cook on a hot griddle until brown spots appear on both sides.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox4')">
+                        <img src="images/breakfast/b4.jpg" alt="Polaroid 4">
+                        <div id="infoBox4" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox4')">&times;</span>
+                            <h2>Vaada</h2><p>1. Soak 1 cup of urad dal for 4 hours, then grind into a thick batter.<br>2. Add chopped onions, green chilies, curry leaves, salt, and asafoetida to the batter.<br>3. Shape the batter into small balls or donuts.<br>4. Deep fry in hot oil until golden brown and crispy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox5')">
+                        <img src="images/breakfast/b5.jpg" alt="Polaroid 5">
+                        <div id="infoBox5" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox5')">&times;</span>
+                            <h2>Puri</h2><p>1. Mix 2 cups of whole wheat flour with a pinch of salt and water to form a stiff dough.<br>2. Divide the dough into small balls and roll them out into small circles.<br>3. Deep fry in hot oil until they puff up and turn golden brown.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox6')">
+                        <img src="images/breakfast/b6.jpg" alt="Polaroid 6">
+                        <div id="infoBox6" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox6')">&times;</span>
+                            <h2>Idli</h2><p>1. Soak 2 cups of rice and 1 cup of urad dal separately for 6 hours.<br>2. Grind them into a smooth batter, mix well, and ferment overnight.<br>3. Add salt to the batter and pour it into greased idli molds.<br>4. Steam for 10-12 minutes until cooked through.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox7')">
+                        <img src="images/breakfast/b7.jpg" alt="Polaroid 7">
+                        <div id="infoBox7" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox7')">&times;</span>
+                            <h2>Vegetable Rava Upma</h2><p>1. To begin making the Vegetable Rava Upma Recipe/ Sooji Upma, prep all the ingredients and keep aside.<br>2. In a saucepan; boil 3-1/4 cups of water along with salt and sugar and set aside. Add the vegetables to this water and cook for a few minutes until cooked. Turn the heat to low and allow the water to remain warm.<br>3. Heat oil in heavy bottomed pan on medium heat; add mustard seeds, half urad dal seeds and allow it to crackle and the dal to turn golden brown and crisp.<br>4. Stir in the onions, ginger, asafoetida, curry leaves and green chilies and sauté until onions are tender.<br>5. Stir in the semolina/sooji/rava and roast along with the onion mixture until you get the light roasted aroma.<br>6. Gradually pour the hot water along with the vegetables into the above mixture and continue to stir in the process to prevent lump formation. Once the Rava Upma comes to a porridge like consistency, turn the heat to low, cover the pan and allow the Rava Upma to cook and steam in the heat.<br>7. Keep stirring occasionally to avoid lumps. This will take about 10 minutes.<br>8. Finally stir in the ghee and lemon juice and sauté for a couple of minutes on low heat until all the ingredients are well combined. The ghee enhances the flavour of the Rava Upma/ Sooji Upma.<br>9. Serve Vegetable Rava Upma Recipe along with Coconut Chutney and South Indian Filter Coffee Recipe With Filter Coffee Powder for a complete south Indian Breakfast.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox8')">
+                        <img src="images/breakfast/b8.jpg" alt="Polaroid 8">
+                        <div id="infoBox8" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox8')">&times;</span>
+                            <h2>Foxtail Millet Rava Idli</h2><p>1.Dry roast 1 cup of foxtail millet rava on medium heat until it turns slightly golden. Set aside.Dry roast 1 cup of semolina until it turns slightly golden. Set aside.<br>2.Heat 2 tablespoons of oil in a pan. Add mustard seeds and let them splutter.Add urad dal and chana dal, and fry until golden brown.Add cumin seeds, asafoetida, curry leaves, grated ginger, and chopped green chilies. Sauté for a minute.<br>3.In a large mixing bowl, combine the roasted foxtail millet rava and roasted semolina.Add the tempered spices to the bowl.Add 1 cup of yogurt and 1 cup of water to the mixture. Mix well to form a thick batter.Add salt to taste and mix well.Just before steaming, add 1 teaspoon of Eno fruit salt or baking soda and mix gently.4.Grease the idli molds with oil.Pour the batter into the idli molds.Steam in an idli steamer or a pressure cooker (without the whistle) for 10-12 minutes or until a toothpick inserted comes out clean.<br>5. Once done, remove the idlis from the molds.Garnish with finely chopped coriander leaves.Serve hot with coconut chutney and sambar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox9')">
+                        <img src="images/breakfast/b9.jpg" alt="Polaroid 9">
+                        <div id="infoBox9" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox9')">&times;</span>
+                            <h2>Sooji Upma With Coconut</h2><p>1. Dry roast 1 cup of semolina until it turns light golden.<br>Heat oil, add mustard seeds, urad dal, chana dal, curry leaves, and chopped green chilies.<br>2. Add 2 cups of water, salt, and bring to a boil.<br>3. Gradually add the roasted semolina, stirring continuously to avoid lumps.<br>4. Cook until the semolina absorbs the water, then mix in grated coconut.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox10')">
+                        <img src="images/breakfast/b10.jpg" alt="Polaroid 10">
+                        <div id="infoBox10" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox10')">&times;</span>
+                            <h2>Palak Ragi & Oats Wheat Thepla</h2><p>1. Mix 1 cup of whole wheat flour, 1/2 cup of ragi flour, 1/4 cup of oats flour, and salt.<br>2. Add finely chopped spinach, ginger, green chilies, and yogurt to form a dough.<br>3. Roll out small portions of the dough into thin circles.<br>4. Cook on a hot griddle until brown spots appear on both sides.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox11')">
+                        <img src="images/breakfast/b11.jpg" alt="Polaroid 11">
+                        <div id="infoBox11" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox11')">&times;</span>
+                            <h2>Poha</h2><p>1. Rinse 2 cups of flattened rice (poha) and let it drain.<br>2. Heat oil, add mustard seeds, cumin seeds, curry leaves, chopped onions, and green chilies.<br>Add turmeric powder, salt, and the rinsed poha.<br>3. Mix well and cook for a few minutes until heated through.<br>4. Garnish with chopped coriander and lemon juice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="polaroid" onclick="showInfoBox('infoBox12')">
+                        <img src="images/breakfast/b12.jpg" alt="Polaroid 12">
+                        <div id="infoBox12" class="info-modal">
+                            <span class="toggle-icon" onclick="hideInfoBox(event, 'infoBox12')">&times;</span>
+                            <h2>Corn Stuffed Paratha</h2><p>1. To begin making the Corn Stuffed Paratha, we have to first wash the corn and keep the potatoes cooked. <br>You can either pressure cook the potatoes for 2 whistles or add them to saucepan with water and boil them for 15 mins/until it is cooked.<br>2. Once the potatoes are cooked, peel the skin and add them to a bowl and mash them. Once mashed, add chopped coriander leaves, sweet corn and homemade tomato pickle. Mix well. Add required amount of salt and mix the mixture well. Keep aside. The corn stuffing is ready. <br> 3. Now we have to make the dough for the paratha. In a flat bowl add wheat flour, salt and mix. Add water little by little and knead the dough until it is smooth and homogeneously mixed. Apply a coating of oil on top of the ball of dough and leave it to rest for 10 minutes.<br>4. Next, divide the dough into medium sized balls. Take one ball of dough and roll it out until its about 4-5 inches diameter.  Place one tablespoon of stuffing in the center and join the ends of the paratha dough so that the stuffing in encased in the dough. Do the same with the rest of the dough and corn mixture.<br>5. Place a tawa on medium heat and add some oil. Place the stuffed paratha on the tawa and cook on both sides until done. Drizzle some oil on top of the paratha when cooking on both sides. Take off the pan and finish the rest of the rolled out parathas. <br>6. Serve Corn Stuffed Paratha Recipe with Pisarna Manga Recipe and Homemade Curd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay" onclick="closeAllInfoBoxes()"></div>
+    <script>
+        function showInfoBox(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hideInfoBox(event, id) {
+            event.stopPropagation(); // Prevent click from propagating to parent
+            document.getElementById(id).style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function closeAllInfoBoxes() {
+            var modals = document.querySelectorAll('.info-modal');
+            modals.forEach(function (modal) {
+                modal.style.display = 'none';
+            });
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+       <footer class="footer p-1">
+        <div>
+            <p>&copy; Developed By Lohitha Kota</p>
+            <p>All rights reserved.</p>
+            <h4 style="font-weight: bold;">Social Media</h4>
+            <p>
+                <i class="fab fa-github display-6"></i> &nbsp;&nbsp;<i class="fab fa-instagram display-6"></i>
+                &nbsp;&nbsp;<i class="fab fa-linkedin display-6"></i>
+            </p>
+        </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>          
+</body>
+</html>
