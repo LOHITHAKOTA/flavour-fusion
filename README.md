@@ -12,6 +12,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+[Click here to view the live demo](https://flavour-fusion-xi.vercel.app/)
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Frontend**:
